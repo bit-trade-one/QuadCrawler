@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="GENERATOR" content="JustSystems Homepage Builder Version 18.0.1.0 for Windows" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+<script type="text/javascript" src="js/common.js"></script>
+<title>そーたメイ - familyday</title>
+</head>
+<body id="hpb-template-01-24-01">
+<div id="top">
+  <div id="hpb-header">
+    <h1><a href="index.html">クアッドクローラー用プログラミングアプリ「つくるっち」</a></h1>
+  </div><!-- /#hpb-header -->
+
+  <div id="contents">
+    <div id="main">
+      <h2>「つくるっち」ダウンロード＆説明</h2>
+      <p>「つくるっち」は小学生から大人まで、プログラミング学習や電子工作を目的に開発したスクラッチ互換のプログラミング環境です。Windowsのみ対応です。
+      MIT LabのScratch2.0とMakeblock社のmBlock3を元に開発したGPLライセンスのオープンソースソフトウェア＆フリーウェアです。</p>
+      <ul>
+        <li><a href="#download">ダウンロードと実行</a></li>
+        <li><a href="#fwType">プログラムの種類</a></li>
+        <li><a href="#connecting">ロボットをつないでPC通信モードに設定 (プログラミングを始める)</a></li>
+        <li><a href="#finish">ロボットを最初のプログラムに戻す (プログラミングをやめるとき)</a></li>
+        <li><a href="#save">プログラムをパソコンに保存、保存したプログラムを開く、プログラムを消す</a></li>
+        <li><a href="#history">リリース履歴、ソースコード</a></li>
+      </ul>
+      <h4><a name="download" id="download">ダウンロードと実行</a></h4>
+      <ul>
+        <li>ダウンロードと展開<br />
+        <b>TuKuRutch.xxx.zip</b>をダウンロードし、右クリックで<b>[すべて展開]</b>して下さい。<br />
+        <b><a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20200213.zip"><font size="+2" style="font-size : 150%;">http://sohta02.sakura.ne.jp/release/TuKuRutch.20200213.zip</font></a></b><br />
+        zipファイルは約200MB、展開すると約480MBになります、パソコンのHDDの空き容量に注意して下さい。Windowsのみ対応です。<br />
+        <img src="images/image17.png" width="369" height="241" border="0" /><br />
+        .</li>
+        <li>展開したフォルダの<b>AdobeAIRInstalle</b>を実行して下さい。<br />
+        <img src="images/image311.png" width="203" height="23" border="0" /><br />
+        &#160;</li>
+        <li><b>CH341SER</b>を実行し、<b>INSTALL</b>を押して下さい（デバイスドライバインストール）。<br />
+        <img src="images/image410.png" width="146" height="25" border="0" /><br />
+        <br />
+        <img src="images/image49.jpg" width="343" height="249" border="0" /><br />
+        &#160;</li>
+        <li>「つくるっち」を実行。<br />
+        <img src="images/image510.png" width="122" height="27" border="0" /></li>
+      </ul>
+
+      <h4><a name="fwType" id="fwType">プログラムの種類</a></h4>
+      <ul style="list-style-type : none">
+        <li>
+        <p>ロボットにはあらかじめ「最初のプログラム」が書いてあり、ロボットは「最初のプログラム」で動いています。<br />
+        自分のプログラムを動かすときは <a href="#connecting">「ロボットをスクラッチアプリにつないでPC通信モードに設定」</a>して下さい。<br />
+        プログラミングをやめ、ロボットで遊ぶときは <a href="#finish">「ロボットを最初のプログラムに戻す」</a>をしてください。</p>
+        <p>プログラムの種類を調べるときは <img src="images/connectOn.png" width="22" height="22" border="0" align="middle" /> <img src="images/connectOff.png" width="22" height="22" border="0" align="middle" /> を押して下さい。<img src="images/image32.png" width="184" height="25" border="0" align="middle" />のように表示されます。</p>
+        </li>
+        <li>
+        <table border="1">
+          <tbody valign="middle">
+            <tr>
+              <td align="center" bgcolor="#ffff80">&#160;種類</td>
+              <td align="center" bgcolor="#ffff80"><img src="images/connectOn.png" width="22" height="22" border="0" />の右の表示</td>
+              <td align="center" bgcolor="#ffff80">書き方</td>
+              <td align="center" bgcolor="#ffff80">説明</td>
+            </tr>
+            <tr>
+              <td><a href="#finish">最初のプログラム</a></td>
+              <td>Normal: QuadCrawlerX.X</td>
+              <td>[接続]-[最初のプログラム]</td>
+              <td><b>最初に書いてあるプログラム。</b><br />
+              ロボットで遊ぶとき使う</td>
+            </tr>
+            <tr>
+              <td><a href="#connecting">PC通信モード</a></td>
+              <td>PC mode: QuadCrawlerX.X</td>
+              <td><img src="images/connectOn.png" width="22" height="22" border="0" />の右の表示を押す</td>
+              <td><b>自分のプログラムを動かす。</b><br />
+              パソコンが必要。</td>
+            </tr>
+            <tr>
+              <td>Arduinoモード</td>
+              <td>Arduino: QuadCrawlerX.X</td>
+              <td>Arduino-アップロード</td>
+              <td><b>自分のプログラムを動かす。</b><br />
+              アップロードが必要、パソコンが不要。</td>
+            </tr>
+          </tbody>
+        </table>
+        </li>
+      </ul>
+
+      <h4><a name="connecting" id="connecting">ロボットをつないでPC通信モードに設定 (プログラミングを始める)</a></h4>
+      <p>　　<b>プログラミングを始める準備をします。</b></p>
+      <ul>
+        <li>USB miniBケーブルでPCとロボットを接続。(microBケーブルは使えません)<br />
+        <img src="images/image66.jpg" width="228" height="167" border="0" />　<img src="images/image210.jpg" width="242" height="187" border="0" /></li>
+        <li>ロボットを選択する。<br />
+        [ロボット] - [リモコンロボ] または [クアッドクローラー]<img src="images/image23.png" width="443" height="209" border="0" /><br />
+        </li>
+        <li>1. <img src="images/connectOff.png" width="22" height="22" border="0" align="middle" />を押す<br />
+        2. <img src="images/connectOn.png" width="22" height="22" border="0" align="middle" />の右の文字を押す<br />
+        <img src="images/image7.png" width="576" height="130" border="0" /></li>
+      </ul>
+
+      <h4><a name="finish" id="finish">ロボットを最初のプログラムに戻す (プログラミングをやめるとき)</a></h4>
+      <ul style="list-style-type : none">
+        <li>
+        <p><font color="#333333"><b>「最初のプログラムに戻す」を実行しないとロボットで遊ぶことができません。</b></font></p></li>
+        <li>
+        <p><img src="images/connectOn.png" width="22" height="22" border="0" align="middle" />が緑になっていることを確認し、[接続] - [ロボットを最初のプログラムに戻す] を選択。 </p></li>
+        <li>
+        <p><img src="images/image18.png" width="428" height="149" border="0" /></p></li>
+      </ul>
+      
+
+      <h4><a name="save" id="save">プログラムをパソコンに保存、保存したプログラムを開く、プログラムを消す</a></h4>
+      <ul>
+        <li>プログラムを保存<br />
+        「プログラム」「同じ名前で保存」を選び、てきとうな名前をつけてパソコンに保存します。そのままだとUntitled.sb2になります。<br />
+        <img src="images/image86.jpg" width="410" height="201" border="0" /></li>
+        <li>保存したプログラムを開く<br />
+        「プログラム」「開く」を選び、プログラムを選びます。</li>
+        <li>プログラムを消す<br />
+        「プログラム」「全部消す」で全部消えます。<br />
+        <img src="images/orgel3.gif" width="485" height="187" border="0" /></li>
+      </ul>
+
+      <h4><a name="history" id="history">リリース履歴、ソースコード</a></h4>
+      <ul>
+        <li>
+        <table border="1"><tbody>
+          <tr>
+            <th bgcolor="#ffff80">日付</th>
+            <th bgcolor="#ffff80">バージョン</th>
+            <th bgcolor="#ffff80">つくるっち</th>
+            <th bgcolor="#ffff80">変更内容</th>
+          </tr>
+            <tr>
+              <td>2020/02/13</td>
+              <td>1.01</td>
+              <td><a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20200213.zip">TuKuRutch.20200213.zip</a></td>
+              <td>- 拡張ブロック定義 jsonファイルからPC通信プログラムを自動生成、世界初！（作者調べ）<br />- クアッドクローラーやその他ロボット、arduino基板対応<br />
+              - デザインを大幅変更</td>
+            </tr>
+            <tr>
+              <td>2020/01/08</td>
+              <td>1.0</td>
+              <td><a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.RemoconRobo.20200108.zip">TuKuRutch.RemoconRobo.20200108.zip</a></td>
+              <td> </td>
+          </tr>
+          <tr>
+            <td>2019/07/15</td>
+            <td>1.0</td>
+            <td><a href="release/RemoconRoboApp.zip">RemoconRoboApp.zip</a><br />
+            <a href="release/RemoconRoboFW.20190715.zip">RemoconRoboFW.20190715.zip</a></td>
+            <td>- アナログリモコン対応<br />
+            - 直進補正対応<br />
+            - MP3/JQ6500対応</td>
+          </tr>
+          <tr>
+            <td>2018/07/30</td>
+            <td align="center">-</td>
+            <td><a href="release/mBlock20180730.zip">mBlock20180730.zip</a></td>
+            <td>- 初リリース</td>
+          </tr>
+        </tbody></table>
+        <br />
+        </li>
+        <li>スクラッチアプリはMakeBlockのmBlock3をforkしたものです、GPLライセンスです。<br />
+        ソースコード：<a href="https://github.com/sohtamei/mBlock/tree/V3.4.5">https://github.com/sohtamei/mBlock/tree/V3.4.5</a></li>
+      </ul>
+
+    </div><!-- /#main -->
+    <div id="hpb-aside">
+      <div class="section">
+        <h2 style="text-align : left;" align="left">クアッドクローラー</h2>
+        <ul>
+          <li><a href="file:///C:/Users/n-tom/Desktop/FDrobot/remoconRobo.work/goma/docs/familyday_app.html">ダウンロード</a>&amp;説明</li>
+          <li><a href="familyday_quadcrawler.html">プログラミング</a></li>
+        </ul>
+      </div>
+      <!-- /.section -->
+    </div>
+    <!-- /#hpb-aside -->
+  </div><!-- /#contents -->
+  <div id="hpb-footer">
+    <div class="copyright">Copyright &#169; 2014-2019 sohta &amp; mei All Rights Reserved.</div>
+  </div><!-- /#hpb-footer -->
+</div><!-- /#top --></body>
+</html>
