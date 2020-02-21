@@ -1,7 +1,7 @@
 ![logo](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/logo.jpg)  
 ![body](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/body.png)
 
-## [組立説明書はこちら！](https://github.com/bit-trade-one/QuadCrawler/blob/Upload-ready/Manual/%E7%B5%84%E7%AB%8B%E3%83%BB%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E8%AA%AC%E6%98%8E%E6%9B%B8.pdf)
+## [組立説明書はこちら！](http://bit-trade-one.co.jp/forUser/ADCRBTmanual.pdf)
 
 ## [PCアプリ「つくるっち」のダウンロードとマニュアルはこちら！](https://bit-trade-one.github.io/QuadCrawler/familyday_app.html)
 
