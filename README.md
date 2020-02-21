@@ -1,4 +1,4 @@
-![logo](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/logo.jpg)  
+![logo](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/ADCRBT-LOGO-YOKOMAX.png)  
 ![body](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/body.png)
 
 ## [組立説明書はこちら！](http://bit-trade-one.co.jp/forUser/ADCRBTmanual.pdf)
@@ -28,7 +28,7 @@
 専用アプリ「つくるっち」はプログラミングの入門・学習に最適なスクラッチプログラミングソフト。  
 お子様のプログラミング学習の先取りにもぴったりです。  
 Github上でオンラインマニュアルを公開、誰でも基礎からプログラミングを試して頂けます。  
-![tkrchlogo](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/tkrchlogo.jpg)  
+![tkrchlogo](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/TuKuRuCh-Logo_FULL.png)  
 ![tkrchwindow](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/tkrchwindow.jpg)  
 （画像は開発中の物です）
  
