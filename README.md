@@ -1,6 +1,10 @@
 ![logo](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/logo.jpg)  
 ![body](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/body.png)
 
+## [組立説明書はこちら！](https://github.com/bit-trade-one/QuadCrawler/blob/Upload-ready/Manual/%E7%B5%84%E7%AB%8B%E3%83%BB%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E8%AA%AC%E6%98%8E%E6%9B%B8.pdf)
+
+## [PCアプリ「つくるっち」のマニュアルはこちら！](https://bit-trade-one.github.io/QuadCrawler/familyday_app.html)
+
 「クアッド・クローラー」は多関節4足歩行ロボットを作製・プログラミングできるロボットキット。  
 高嶺の花となりがちな多脚ロボットをできるだけ簡単に、手に取りやすくなるようキット化しました。  
 組立はほぼドライバーのみで完結。工作初心者でも手軽にロボを組上げることができます。  
