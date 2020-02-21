@@ -1,5 +1,5 @@
-![logo]https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/logo.jpg)  
-![body]https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/body.png)
+![logo](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/logo.jpg)  
+![body](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/body.png)
 
 「クアッド・クローラー」は多関節4足歩行ロボットを作製・プログラミングできるロボットキット。  
 高嶺の花となりがちな多脚ロボットをできるだけ簡単に、手に取りやすくなるようキット化しました。  
