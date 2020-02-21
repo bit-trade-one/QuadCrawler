@@ -5,6 +5,11 @@
 クアッドクローラのプログラムをArduino IDEで  
 作成するためのライブラリです。
 
+動作には、以下のライブラリが必要になります。
+ - Adafruit_PWMServoDriver
+ - Adafruit_NeoPixel
+ これらのライブラリをArduino IDEにインストールしてください。
+
 ## tukurutchFirm
 
 クアッドクローラのプログラムをつくるっちで
