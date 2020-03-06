@@ -1,0 +1,164 @@
+{
+	"name"			: "QuadCrawler",
+	"port"			: 0,										// 変更禁止
+	"boardType"		: "atmega328",
+
+	"sort"			: 2,										// メニュー上の表示順序
+	"extensionAuthor": "sohtamei",								// この拡張スクリプトの作者
+	"helpURL"		: "http://sohta02.web.fc2.com/familyday_quadcrawler.html",
+	"productInfoURL": "https://camp-fire.jp/projects/view/213076",
+	"sampleDir"		: "sample/QuadCrawler",						// サンプルディレクトリ
+	"javascriptURL"	: "robot.js",
+	"normalFW"		: "robot_normal/robot_normal",				// 最初のプログラム,  .ino, .cpp.standard.hex
+	"pcmodeFW"		: "robot_pcmode/robot_pcmode",				// PC modeプログラム, .ino, .cpp.standard.hex, .ino.template
+
+	// C言語記述注意 : " を使うときは \" とすること
+
+	// PCモード/書き込みモード ヘッダ (C言語)
+	"header":"
+#include <Arduino.h>
+#include <EEPROM.h>                     // for quadCrawlerRemocon
+#include \"quadCrawlerRemocon.h\"
+
+#include <Wire.h>                       // for Adafruit_PWMServoDriver
+#include <Adafruit_PWMServoDriver.h>    // for quadCrawler
+#include <Adafruit_NeoPixel.h>          // for quadCrawler
+#include \"quadCrawler.h\"
+
+#define mVersion \"QuadCrawler1.0\"
+
+const uint8_t sw_table[4] = {3,4,5,6};
+",
+	// PCモード/書き込みモード setup処理 (C言語)
+	"setup":"
+remoconRobo_init();
+digitalWrite(13, HIGH);
+Serial.begin(115200);
+delay(500);
+digitalWrite(13, LOW);
+
+quadCrawler_init();
+quadCrawler_colorWipe(COLOR_PURPLE);
+quadCrawler_beep(100);
+",
+	// PCモード/書き込みモード loop処理 (C言語)
+	"loop":"
+quadCrawler_servoLoop();
+",
+
+	// PCモード/書き込みモード スクラッチブロック定義
+	"blockSpecs": [
+	// type			: w-実行関数, R-取得関数, B-true/false取得, h-プログラム開始
+	// Block定義	: パラメータ %n-数値, %d-数値+enum, %s-文字列, %m-文字列+enum
+	// remote		: 通常関数, 引数+戻値 型定義 B-int8, S-int16, L-int32, F-float, D-double, s-string
+	// custom		: 特殊関数, robot.js呼び出し(ext.Block名). PCモードと書き込みモードで処理を分けるとき使用。
+	// enum			: enum値取得
+	// 実行/取得関数: 引数 {0},{1}, 関数の区切り＝wブロック';', R/Bブロック','  (C言語)
+
+	//  type | Block定義                               | Block名           | 初期値     |remote/custom/enum| 実行/取得関数
+	//-------+-----------------------------------------+-------------------+------------+------------------+----------------------------------
+		["h", "Program Start",							"runArduino",					{}],	// 変更禁止
+
+		["w", "walk %d.walkcmd %d.speed",				"setWalk",			"fw","fast",{"remote":["B","B"],"func":"quadCrawler_Walk({1},{0});"}],
+		["w", "FrontR %d.knee %d.crotch",				"setPoseRF", "Neutral","Neutral",{"remote":["B","B"],"func":"quadCrawler_setPose1(0,{0},{1});"}],
+		["w", "RearR  %d.knee %d.crotch",				"setPoseRR", "Neutral","Neutral",{"remote":["B","B"],"func":"quadCrawler_setPose1(1,{0},{1});"}],
+		["w", "FrontL %d.knee %d.crotch",				"setPoseLF", "Neutral","Neutral",{"remote":["B","B"],"func":"quadCrawler_setPose1(2,{0},{1});"}],
+		["w", "RearL  %d.knee %d.crotch",				"setPoseLR", "Neutral","Neutral",{"remote":["B","B"],"func":"quadCrawler_setPose1(3,{0},{1});"}],
+		["w", "stop",									"setStop",						{"remote":[],		"func":"quadCrawler_Walk(200,0);"}],
+
+		["w", "LED %d.color",							"setColorWipe",		"red",		{"remote":["B"],	"func":"quadCrawler_colorWipe({0});"}],
+		["w", "LED rainbow %d sec",						"setRainbow",		5,			{"remote":["B"],	"func":"quadCrawler_rainbow({0});"}],
+		["w", "beep %d",								"setBeep",			50,			{"remote":["S"],	"func":"quadCrawler_beep({0});"}],
+		["R", "read Sonner",							"getSonner",					{"remote":["F"],	"func":"quadCrawler_getSonner()"}],
+		["B", "SW %d.sw is pressed",					"getSW",			1,			{"remote":["B","B"],"func":"(({0}>=1&&{0}<=4)?digitalRead(sw_table[{0}-1]):0)==0"}],
+
+		["-"],	// ブロック区切り
+
+		// robot.js呼び出し
+		["B", "remote pressed",							"checkRemoteKey",				{"custom":"", 		"func":"remoconRobo_checkRemoteKey()"}],
+		["B", "ir remote %d.ircode pressed",			"isRemoteKey",		"POWER",	{"custom":"",		"func":"remoconRobo_isRemoteKey({0})"}],
+		["B", "analog remote %d.ircodeA pressed",		"isARemoteKey",		"A↑",		{"custom":"",		"func":"remoconRobo_isRemoteKey({0})"}],
+		["R", "get remote X",							"getRemoteX",					{"custom":"",		"func":"remoconRobo_getRemoteX()"}],
+		["R", "get remote Y",							"getRemoteY",					{"custom":"",		"func":"remoconRobo_getRemoteY()"}],
+
+		["-"],
+
+		["w", "set LED %d.onoff",						"setLED",			"On",		{"remote":["B"],	"func":"pinMode(13,OUTPUT);digitalWrite(13,{0});"}],
+
+		["w", "set digital pin %n output as %d.digital","setDigital",		13,"HIGH",	{"remote":["B","B"], "func":"pinMode({0},OUTPUT);digitalWrite({0},{1});"}],
+		["w", "set digital pin A%n output as %d.digital","setDigitalA",		0,"HIGH",	{"remote":["B","B"], "func":"pinMode(A0+{0},OUTPUT);digitalWrite(A0+{0},{1});"}],
+		["B", "read digital pin %n",					"getDigital",		9,			{"remote":["B","B"], "func":"pinMode({0},INPUT),digitalRead({0})"}],
+		["B", "read digital pin A%n",					"getDigitalA",		0,			{"remote":["B","B"], "func":"pinMode(A0+{0},INPUT),digitalRead(A0+{0})"}],
+		["R", "read analog pin A%n",					"getAnalog",		0,			{"remote":["B","S"], "func":"pinMode(A0+{0},INPUT),remoconRobo_getAnalog(A0+{0},1)"}],
+		["R", "read analog pin A%n average %n times",	"getAnalogAve",		0,10,		{"remote":["B","S","S"], "func":"pinMode(A0+{0},INPUT),remoconRobo_getAnalog(A0+{0},{1})"}],
+
+		["-"],
+
+		// enum
+		["r", "%d.ircode .",							"enumIrcode",		"POWER",	{"enum":"",			"func":"{0}"}],
+		["r", "%d.ircodeA .",							"enumIrcodeA",		"A↑",		{"enum":"",			"func":"{0}"}],
+		["r", "%d.color .",								"enumColor",		"red",		{"enum":"",			"func":"{0}"}],
+		["r", "%d.walkcmd .",							"enumWalkcmd",		"fw",		{"enum":"",			"func":"{0}"}],
+		["r", "%d.knee .",								"enumKnee",			"Neutral",	{"enum":"",			"func":"{0}"}],
+		["r", "%d.crotch .",							"enumCrotch",		"Neutral",	{"enum":"",			"func":"{0}"}],
+	],
+	"menus": {
+		"digital":["HIGH","LOW"],
+		"onoff":["On","Off"],
+		"ircode":["POWER","MENU","TEST","RETURN","R0","C","↑","↓","←","→","CENTER","R1","R2","R3","R4","R5","R6","R7","R8","R9","B"],
+		"ircodeA":["A CENTER","A U","A R","A L","A D","A↑→","A↑","A←↑","A→","A←","A↓→","A↓","A←↓"],
+
+		"speed":["sslow","slow","typical","fast", "high"],
+		"walkcmd":["stop","fw","cw","ccw","rw","right","left","all_up","all_down","t_down","h_down","l_down","r_down","t_up_down","l_r_up","all_up_down"],
+		"color":["off","red","green","blue","yellow","purple","lightblue"],
+		"knee":["Neutral","up","down","max"],
+		"crotch":["Neutral","rear","front"],
+		"sw":["1","2","3","4"],
+	},
+	"values":{
+		"HIGH":1,"LOW":0,
+		"On":1,"Off":0,
+		"POWER":0x45,"B":0x46,"MENU":0x47,"TEST":0x44,"RETURN":0x43,"R0":0x16,"C":0x0D,"↑":0x40,"↓":0x19,"←":0x07,"→":0x09,"CENTER":0x15,
+		"R1":0x0C,"R2":0x18,"R3":0x5E,"R4":0x08,"R5":0x1C,"R6":0x5A,"R7":0x42,"R8":0x52,"R9":0x4A,
+		"A CENTER":0x61,"A U":0x62,"A R":0x63,"A L":0x64,"A D":0x65,"A↑→":0x70,"A↑":0x71,"A←↑":0x72,"A→":0x73,"A←":0x74,"A↓→":0x75,"A↓":0x76,"A←↓":0x77,
+		"sslow":2000,"slow":1000,"typical":500,"fast":200,"high":100,
+		"stop":0,"fw":1,"cw":2,"ccw":3,"rw":4,"right":5,"left":6,"all_up":7,"all_down":8,"t_down":9,"h_down":10,"l_down":11,"r_down":12,"t_up_down":13,"l_r_up":14,"all_up_down":15,
+		"off":0,"red":1,"green":2,"blue":3,"yellow":4,"purple":5,"lightblue":6,
+		"keep":0,"Neutral":1,"up":2,"down":3,"max":4, "rear":2,"front":3,
+	},
+	"translators":{
+		"ja":{
+			"set LED %d.onoff"								:"LEDを %d.onoff",
+			"remote pressed"								:"リモコンボタンが押された",
+			"ir remote %d.ircode pressed"					:"押されたのが %d.ircode のボタン",
+			"analog remote %d.ircodeA pressed"				:"押されたのがアナログ %d.ircodeA のボタン",
+			"get remote X"									:"アナログXの値",
+			"get remote Y"									:"アナログYの値",
+			"set digital pin %n output as %d.digital"		:"デジタルピン %n の出力を %d.digital にする",
+			"set digital pin A%n output as %d.digital"		:"デジタルピン A%n の出力を %d.digital にする",
+			"read digital pin %n"							:"デジタルピン %n",
+			"read digital pin A%n"							:"デジタルピン A%n",
+			"read analog pin A%n"							:"アナログピン A%n",
+			"read analog pin A%n average %n times"			:"アナログピン A%n の %n 回平均",
+
+			"walk %d.walkcmd %d.speed":"動く %d.walkcmd %d.speed",
+			"FrontR %d.knee %d.crotch"	: "右前足 %d.knee %d.crotch",
+			"RearR  %d.knee %d.crotch"	: "右後足 %d.knee %d.crotch",
+			"FrontL %d.knee %d.crotch"	: "左前足 %d.knee %d.crotch",
+			"RearL  %d.knee %d.crotch"	: "左後足 %d.knee %d.crotch",
+
+			"LED rainbow %d sec"		: "LEDレインボー %d 秒",
+			"beep %d"					: "ビープ %d",
+			"read Sonner"				: "距離取得",
+			"SW %d.sw is pressed"		: "スイッチ %d.sw が押された",
+
+			"sslow":"超低速","slow":"低速","typical":"普通","fast":"高速","high":"超高速",
+			"stop":"停止","fw":"前進","cw":"右旋回","ccw":"左旋回","rw":"後進","right":"右移動","left":"左移動",
+			"all_up":"しゃがむ","all_down":"伸び","t_down":"後傾斜","h_down":"前傾斜","l_down":"左傾斜","r_down":"右傾斜","t_up_down":"背伸び","l_r_up":"左右傾斜","all_up_down":"スクワット",
+
+			"off":"消す","red":"赤色","green":"緑色","blue":"青色","yellow":"黄色","purple":"紫色","lightblue":"水色",
+			"keep":"保持","Neutral":"中立","up":"上","down":"下","max":"下最大",
+			"keep":"保持","Neutral":"中立","rear":"後","front":"前",
+		}
+	}
+}
