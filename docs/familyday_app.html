@@ -22,10 +22,11 @@
   <div id="contents">
     <div id="main">
       <h2>「つくるっち」ダウンロード＆説明</h2>
+      <p><img src="images/TuKuRuCh-Logo_FULL.png" width="353" height="100" border="0" /></p>
       <p>「つくるっち」は小学生から大人まで、プログラミング学習や電子工作を目的に開発したスクラッチ互換のプログラミング環境です。Windowsのみ対応です。
       MIT LabのScratch2.0とMakeblock社のmBlock3を元に開発したGPLライセンスのオープンソースソフトウェア＆フリーウェアです。</p>
       <ul>
-        <li><a href="#download">ダウンロードと実行</a></li>
+        <li><a href="#download">ダウンロードと実行（通常版）</a></li>
         <li><a href="#updateFW">本体FWの更新</a> (3/6追記)</li>
         <li><a href="#fwType">プログラムの種類</a></li>
         <li><a href="#connecting">ロボットをつないでPC通信モードに設定 (プログラミングを始める)</a></li>
@@ -33,13 +34,20 @@
         <li><a href="#save">プログラムをパソコンに保存、保存したプログラムを開く、プログラムを消す</a></li>
         <li><a href="#history">リリース履歴、ソースコード</a></li>
       </ul>
-      <h4><a name="download" id="download">ダウンロードと実行</a></h4>
+      <h4><a name="download" id="download">ダウンロードと実行<b>（通常版）</b></a></h4>
       <ul>
-        <li>ダウンロードと展開<br />
+        <li><b>ダウンロードと展開</b><br />
         <b>TuKuRutch.xxx.zip</b>をダウンロードし、右クリックで<b>[すべて展開]</b>して下さい。<br />
+        クアッドクローラーFW (ver1.1、なめらか制御）<br />
         <b><a href="http://bit-trade-one.co.jp/forUser/TuKuRutch20200305.zip"><font size="+2" style="font-size : 150%;">http://bit-trade-one.co.jp/forUser/TuKuRutch20200305.zip</font></a></b><br />
+        クアッドクローラーFW (ver1.0、きびきび制御）<br />
+        <b><a href="http://bit-trade-one.co.jp/forUser/TuKuRutch20200213.zip"><font size="+2" style="font-size : 150%;">http://bit-trade-one.co.jp/forUser/TuKuRutch20200213.zip</font></a></b><br />
+        ※ver1.1で動きが悪いときはver1.0も試してみて下さい。<br />
+        <br />
+<!--
         <a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20200305.zip">http://sohta02.sakura.ne.jp/release/TuKuRutch.20200305.zip</a>　　※そーたメイサイト ミラー<br />
-        zipファイルは約220MB、展開すると約550MBになります、パソコンのHDDの空き容量に注意して下さい。Windowsのみ対応です。<br />
+-->
+        zipファイルは約210MB、展開すると約550MBになります、パソコンのHDDの空き容量に注意して下さい。Windowsのみ対応です。<br />
         <img src="images/image17.png" width="369" height="241" border="0" /><br />
         .</li>
         <li>展開したフォルダの<b>AdobeAIRInstalle</b>を実行して下さい。<br />
@@ -51,19 +59,20 @@
         <img src="images/image49.jpg" width="343" height="249" border="0" /><br />
         &#160;</li>
         <li>「つくるっち」を実行。<br />
-        <img src="images/image510.png" width="122" height="27" border="0" /></li>
+        <img src="images/image510.png" width="122" height="27" border="0" /><br />
+        　</li>
       </ul>
 
       <h4><a name="updateFW" id="updateFW">本体FWの更新</a> (3/6追記)</h4>
       <ul>
         <li>「つくるっち」が最新か確認して下さい、最新は「つくるっち1.02」です。(TuKuRutch20200305.zip)</li>
         <li>「ロボット」-「クアッドクローラー」を選択<br />
-        <img src="images/image1.png" width="399" height="219" border="0" /><br />
+        <img src="images/image1a.png" width="399" height="219" border="0" /><br />
         　</li>
         <li>クアッドクローラーを接続し、<img src="images/connectOff.png" width="22" height="22" border="0" align="middle" />を押して下さい。赤線の部分が<br />
         <b>Normal: QuadCrawler1.1</b>のときは最新FWです。<br />
         <b>Normal: QuadCrawler1.0</b>のときは本体FWを更新して下さい、[接続] - [ロボットを最初のプログラムに戻す] を実行して下さい。<br />
-        <img src="images/image2.png" width="593" height="219" border="0" /></li>
+        <img src="images/image2a.png" width="593" height="219" border="0" /></li>
       </ul>
       <h4><a name="fwType" id="fwType">プログラムの種類</a></h4>
       <ul style="list-style-type : none">
@@ -71,7 +80,8 @@
         <p>ロボットにはあらかじめ「最初のプログラム」が書いてあり、ロボットは「最初のプログラム」で動いています。<br />
         自分のプログラムを動かすときは <a href="#connecting">「ロボットをスクラッチアプリにつないでPC通信モードに設定」</a>して下さい。<br />
         プログラミングをやめ、ロボットで遊ぶときは <a href="#finish">「ロボットを最初のプログラムに戻す」</a>をしてください。</p>
-        <p>プログラムの種類を調べるときは <img src="images/connectOn.png" width="22" height="22" border="0" align="middle" /> <img src="images/connectOff.png" width="22" height="22" border="0" align="middle" /> を押して下さい。<img src="images/image32.png" width="184" height="25" border="0" align="middle" />のように表示されます。</p>
+        <p>プログラムの種類を調べるときは <img src="images/connectOn.png" width="22" height="22" border="0" align="middle" /> <img src="images/connectOff.png" width="22" height="22" border="0" align="middle" /> を押して下さい。<img src="images/image32.png" width="184" height="25" border="0" align="middle" />のように表示されます。<br />
+        <font color="#ff0000">※M5STACKは画面に表示されます、ESP32は未対応です。</font></p>
         </li>
         <li>
         <table border="1">
