@@ -7,6 +7,8 @@
 
 ## [PCアプリ「つくるっち」のダウンロードとマニュアルはこちら！](https://bit-trade-one.github.io/QuadCrawler/familyday_app.html)
 
+## [ファームウェアソースはこちら](https://github.com/sohtamei/TuKuRutch.ext/tree/master/libraries/QuadCrawler)
+
 「クアッド・クローラー」は多関節4足歩行ロボットを作製・プログラミングできるロボットキット。  
 高嶺の花となりがちな多脚ロボットをできるだけ簡単に、手に取りやすくなるようキット化しました。  
 組立はほぼドライバーのみで完結。工作初心者でも手軽にロボを組上げることができます。  
