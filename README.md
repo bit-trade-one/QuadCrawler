@@ -9,6 +9,8 @@
 
 ## [ファームウェアソースはこちら](https://github.com/sohtamei/TuKuRutch.ext/tree/master/libraries/QuadCrawler)
 
+## [良くある質問はこちら](https://github.com/bit-trade-one/QuadCrawler/blob/master/FAQ.md)
+
 「クアッド・クローラー」は多関節4足歩行ロボットを作製・プログラミングできるロボットキット。  
 高嶺の花となりがちな多脚ロボットをできるだけ簡単に、手に取りやすくなるようキット化しました。  
 組立はほぼドライバーのみで完結。工作初心者でも手軽にロボを組上げることができます。  
