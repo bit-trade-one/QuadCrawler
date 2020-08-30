@@ -3,6 +3,8 @@
 
 ## [組立説明書はこちら！](http://bit-trade-one.co.jp/forUser/ADCRBTmanual.pdf)
 
+## [補足組立情報](AdditionalInformation.md)
+
 ## [リモコン操作方法はこちら！](InstructionManual.md)
 
 ## [PCアプリ「つくるっち」のダウンロードとマニュアルはこちら！](https://bit-trade-one.github.io/QuadCrawler/familyday_app.html)
