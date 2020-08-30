@@ -3,7 +3,7 @@
 
 ## [組立説明書はこちら！](http://bit-trade-one.co.jp/forUser/ADCRBTmanual.pdf)
 
-## [補足組立情報](AdditionalInformation.md)
+## [組立情報 補足](AdditionalInformation.md)
 
 ## [リモコン操作方法はこちら！](InstructionManual.md)
 
