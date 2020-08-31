@@ -4,7 +4,7 @@
 
 #### 調整手順
 1. ロボット本体のスイッチ4を押す → 全てのLEDを赤く点灯させる。  
-![image](https://user-images.githubusercontent.com/43091864/91677930-2574b180-eb7f-11ea-8eb8-5396f75a4843.png)
+![image](https://user-images.githubusercontent.com/43091864/91678002-5523b980-eb7f-11ea-8149-05dfcd2e0d6c.png)  
 
 2. リモコンの1(右前脚) を押す → 右前脚のLEDを赤く点灯させる。  
 
