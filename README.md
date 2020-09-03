@@ -7,7 +7,7 @@
 
 ## [リモコン操作方法はこちら！](InstructionManual.md)
 
-## [PCアプリ「つくるっち」のダウンロードとマニュアルはこちら！](https://bit-trade-one.github.io/QuadCrawler/familyday_app.html)
+## [PCアプリ「つくるっち」のダウンロードとマニュアルはこちら！](https://bit-trade-one.github.io/QuadCrawler/docs/familyday_app.html)
 
 ## [ファームウェアソースはこちら](https://github.com/sohtamei/TuKuRutch.ext/tree/master/libraries/QuadCrawler)
 
