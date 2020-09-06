@@ -12,20 +12,20 @@
 ![image](https://user-images.githubusercontent.com/43091864/91677685-6b7d4580-eb7e-11ea-8f1e-62de1b17d3cf.png)
 
 4. リモコンの＋－を押して脚を上下に調整し、脚を下図のスリットの位置ちょうどに合わせる。  
-<img src="https://user-images.githubusercontent.com/43091864/91677335-57851400-eb7d-11ea-8b3e-931ff18073d5.png" width="334" height="292" border="0" />  
+　　<img src="https://user-images.githubusercontent.com/43091864/91677335-57851400-eb7d-11ea-8b3e-931ff18073d5.png" width="334" height="292" border="0" />  
 
 5. リモコンの2(左前脚)、3(右後脚)、4(左後脚) について3~4を繰り返す。
 
 6. ロボット本体のスイッチ4を押す → 全てのLEDを薄紫に点灯させる。 
 
-7. リモコンの 1 (伏せ) を押し、全ての脚が地面から数mm浮くことを確認する。
-<img src="https://user-images.githubusercontent.com/43091864/92335567-03c18000-f0d3-11ea-9292-3755ec897ce7.JPG" width="294" height="156" border="0" />  
+7. リモコンの 1 (伏せ) を押し、全ての脚が地面から数mm浮くことを確認する。  
+　　<img src="https://user-images.githubusercontent.com/43091864/92335567-03c18000-f0d3-11ea-9292-3755ec897ce7.JPG" width="294" height="156" border="0" />  
 
 8. サーボのケーブルが点線から外側にはみ出さないよう束ねる。  
-<img src="https://user-images.githubusercontent.com/43091864/92335571-0623da00-f0d3-11ea-8193-08c138463dba.JPG" width="365" height="208" border="0" />  
+　　<img src="https://user-images.githubusercontent.com/43091864/92335571-0623da00-f0d3-11ea-8193-08c138463dba.JPG" width="365" height="208" border="0" />  
 
-新しいソフトでは脚が写真の位置まで動くため、ケーブルが引っ張られないように長さを調整。  
-<img src="https://user-images.githubusercontent.com/43091864/92335765-0fae4180-f0d5-11ea-8063-796a38313b14.JPG" width="256" height="328" border="0" />  
+　　新しいソフトでは脚が写真の位置まで動くため、ケーブルが引っ張られないように長さを調整。  
+　　<img src="https://user-images.githubusercontent.com/43091864/92335765-0fae4180-f0d5-11ea-8063-796a38313b14.JPG" width="256" height="328" border="0" />  
 
 #### 注意
 - ±30度を超えるとボタンを押したときのブザー音が ピ から ピー(1秒) になります。配線や組み立てを見直し、その後調整をやり直して下さい。  
