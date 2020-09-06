@@ -23,7 +23,6 @@
 
 8. サーボのケーブルが点線から外側にはみ出さないよう束ねる。  
 　　<img src="https://user-images.githubusercontent.com/43091864/92335571-0623da00-f0d3-11ea-8193-08c138463dba.JPG" width="365" height="208" border="0" />  
-
 　　新しいソフトでは脚が写真の位置まで動くため、ケーブルが引っ張られないように長さを調整。  
 　　<img src="https://user-images.githubusercontent.com/43091864/92335765-0fae4180-f0d5-11ea-8063-796a38313b14.JPG" width="256" height="328" border="0" />  
 
