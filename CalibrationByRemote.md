@@ -21,8 +21,8 @@
 7. リモコンの 1 (伏せ) を押し、全ての脚が地面から数mm浮くことを確認する。  
 　　<img src="https://user-images.githubusercontent.com/43091864/92335567-03c18000-f0d3-11ea-9292-3755ec897ce7.JPG" width="294" height="156" border="0" />  
 
-8. サーボのケーブルが点線から外側にはみ出さないよう束ねる。  
-　　<img src="https://user-images.githubusercontent.com/43091864/92335571-0623da00-f0d3-11ea-8193-08c138463dba.JPG" width="365" height="208" border="0" />  
+8. サーボのケーブルが点線から下にはみ出さないよう束ねる。  
+　　<img src="https://user-images.githubusercontent.com/43091864/92386325-8e939080-f14e-11ea-8754-724b1d984763.JPG" width="365" height="208" border="0" />  
 　　新しいソフトでは脚が写真の位置まで動くため、ケーブルが引っ張られないように長さを調整。  
 　　<img src="https://user-images.githubusercontent.com/43091864/92335765-0fae4180-f0d5-11ea-8063-796a38313b14.JPG" width="256" height="328" border="0" />  
 
