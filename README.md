@@ -1,6 +1,10 @@
 ![logo](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/ADCRBT-LOGO-YOKOMAX.png)  
 ![body](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/body.png)
 
+## [新しい本体ソフトをリリースしました！ 更新手順はこちら](https://bit-trade-one.github.io/QuadCrawler/docs/familyday_app.html#updateFW)
+
+新しい本体ソフトでは [サーボ角度の微調整](CalibrationByRemote.md) が必要です。  
+
 ## [組立説明書はこちら！](http://bit-trade-one.co.jp/forUser/ADCRBTmanual.pdf)
 
 ## [組立情報 補足](AdditionalInformation.md)
@@ -9,9 +13,7 @@
 
 ## [PCアプリ「つくるっち」のダウンロードとマニュアルはこちら！](https://bit-trade-one.github.io/QuadCrawler/docs/familyday_app.html)
 
-## [ファームウェアソースはこちら](https://github.com/sohtamei/TuKuRutch.ext/tree/master/libraries/QuadCrawler)
-
-## [良くある質問はこちら](https://github.com/bit-trade-one/QuadCrawler/blob/master/FAQ.md)
+## [良くある質問はこちら](FAQ.md)
 
 「クアッド・クローラー」は多関節4足歩行ロボットを作製・プログラミングできるロボットキット。  
 高嶺の花となりがちな多脚ロボットをできるだけ簡単に、手に取りやすくなるようキット化しました。  
