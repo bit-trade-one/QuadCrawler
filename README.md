@@ -1,5 +1,5 @@
 ![logo](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/ADCRBT-LOGO-YOKOMAX.png)  
-![body](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/body.png)
+![body](docs/images/body.png)
 
 ## [新しい本体ソフトをリリースしました！ 更新手順はこちら](https://bit-trade-one.github.io/QuadCrawler/docs/familyday_app.html#updateFW)
 
