@@ -26,6 +26,9 @@
       <p>「つくるっち2.0x」は小学生から大人まで、プログラミング学習や電子工作を目的に開発したスクラッチ互換のプログラミング環境です。Windowsのみ対応です。
       MIT LabのScratch2.0とMakeblock社のmBlock3を元に開発したGPLライセンスのオープンソースソフトウェア＆フリーウェアです。</p>
       <ul>
+        <li><a href="#updateFW">クアッドクローラー本体ソフトの更新</a></li>
+      </ul>
+      <ul>
         <li><a href="#download">ダウンロードと実行（ATmega版）</a><font color="#ff0000"> リモコンロボ、クアッドクローラーはこちら</font></li>
         <li><a href="#error">exeを実行したときにエラーが出るとき</a></li>
       </ul>
@@ -33,11 +36,25 @@
         <li><a href="#fwType">プログラムの種類</a></li>
         <li><a href="#connecting">ロボットをつないでPC通信モードに設定 (プログラミングを始める)</a></li>
         <li><a href="#finish">ロボットを最初のプログラムに戻す (プログラミングをやめるとき)</a></li>
-      </ul>
-      <ul>
-        <li><a href="#updateFW">クアッドクローラー本体ソフトの更新</a></li>
         <li><a href="#save">プログラムをパソコンに保存、保存したプログラムを開く、プログラムを消す</a></li>
         <li><a href="#history">リリース履歴、ソースコード</a></li>
+      </ul>
+
+      <h4><a name="updateFW" id="updateFW">クアッドクローラー本体ソフトの更新</a></h4>
+      <ul>
+        <li>つくるっちアプリをダウンロード。最新版は20220204です。<br />
+<!--
+        <b><a href="https://bit-trade-one.co.jp/forUser/TuKuRutch20220204.zip">https://bit-trade-one.co.jp/forUser/TuKuRutch20220204.zip</a></b>
+-->
+        <b><a href="http://sohta02.sakura.ne.jp/release/TuKuRutchInstaller.20220204.avr.zip">http://sohta02.sakura.ne.jp/release/TuKuRutchInstaller.20220204.avr.zip</a></b><br />
+        </li>
+        <li><b>[ロボット] - [クアッドクローラー]</b> を選択<br />
+        <img src="images/image1a.png" width="399" height="219" border="0" /><br />
+        　</li>
+        <li>クアッドクローラーを接続し、<b>[接続] - [ロボットに接続]</b> を選択。赤線の部分が<b>Normal: QuadCrawler1.5</b>のときは最新の本体ソフトです。<b>Normal: QuadCrawler1.5</b>でないときは <b>[接続] - [ロボットを最初のプログラムに戻す]</b> で本体ソフトを更新して下さい。<br />
+        <img src="images/image2a.png" width="593" height="219" border="0" /></li>
+        <li>サーボ角度の微調整を行っていないときは<a href="https://bit-trade-one.github.io/QuadCrawler/CalibrationByRemote"><b>このページ</b></a>に従ってサーボ角度の微調整を行って下さい。
+        </li>
       </ul>
 
       <h4><a name="download" id="download">ダウンロードと実行（ATmega版）</a></h4>
@@ -167,32 +184,11 @@
       <h4><a name="finish" id="finish">ロボットを最初のプログラムに戻す (プログラミングをやめるとき)</a></h4>
       <ul style="list-style-type : none">
         <li>「最初のプログラムに戻す」を実行しないとロボットで遊ぶことができません。<br />
-        <font color="#ff0000">
-        M5Stack, M5StickCで「つくるっち」をやめるときは<a href="https://m5stack.com/pages/download"><b>M5Burner</b></a>でUIFlowを再書き込みして下さい。</font><br />
         　</li>
         <li><img src="images/connectOn.png" width="22" height="22" border="0" align="middle" />が緑になっていることを確認し、[接続] - [ロボットを最初のプログラムに戻す] を選択。 </li>
         <li><img src="images/image18.png" width="428" height="149" border="0" /><br /></li>
         <li>USB接続中<img src="images/connectOn.png" width="22" height="22" border="0" align="middle" />で、「ロボットを最初のプログラムに戻す」の文字が灰色で選択できないときは非対応です。<br />
         <img src="images/image28.png" width="466" height="204" border="0" /></li>
-      </ul>
-
-      <h4><a name="updateFW" id="updateFW">クアッドクローラー本体ソフトの更新</a></h4>
-      <ul>
-        <li>「つくるっち」アプリが最新か確認して下さい、最新は「20220204」です。<br />
-<!--
-        <b><a href="https://bit-trade-one.co.jp/forUser/TuKuRutch20220204.zip">https://bit-trade-one.co.jp/forUser/TuKuRutch20220204.zip</a></b>
--->
-        <b><a href="http://sohta02.sakura.ne.jp/release/TuKuRutchInstaller.20220204.avr.zip">http://sohta02.sakura.ne.jp/release/TuKuRutchInstaller.20220204.avr.zip</a></b><br />
-        </li>
-        <li>「ロボット」-「クアッドクローラー」を選択<br />
-        <img src="images/image1a.png" width="399" height="219" border="0" /><br />
-        　</li>
-        <li>クアッドクローラーを接続し、<img src="images/connectOff.png" width="22" height="22" border="0" align="middle" />を押して下さい。赤線の部分が<br />
-        <b>Normal: QuadCrawler1.3</b>のときは最新の本体ソフトです。<br />
-        Normal: QuadCrawler1.3でないときは本体ソフトを更新して下さい、[接続] - [ロボットを最初のプログラムに戻す] を実行して下さい。</li>
-        <li>最新本体ソフトではサーボの微調整に対応しました。<br />
-        <font color="#ff0000">ロボットをスムーズに歩行させるため必ず<a href="https://bit-trade-one.github.io/QuadCrawler/CalibrationByRemote"><b>このページ</b></a>に従ってサーボ角度の微調整を行って下さい。</font><br />
-        <img src="images/image2a.png" width="593" height="219" border="0" /></li>
       </ul>
 
       <h4><a name="save" id="save">プログラムをパソコンに保存、保存したプログラムを開く、プログラムを消す</a></h4>
@@ -215,19 +211,22 @@
         <table border="1"><tbody>
           <tr>
             <th bgcolor="#ffff80">日付</th>
-            <th bgcolor="#ffff80">ver</th>
-            <th bgcolor="#ffff80">つくるっち</th>
+            <th bgcolor="#ffff80">app</th>
+              <th bgcolor="#ffff80">FW</th>
+              <th bgcolor="#ffff80">つくるっち</th>
             <th bgcolor="#ffff80">変更内容</th>
           </tr>
             <tr>
-              <td>2022/2/4</td>
+              <td>2022/02/04</td>
               <td>xx</td>
+              <td>1.5</td>
               <td><a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20220204.avr.zip">TuKuRutch.20220204.avr.zip</a> ATmega版</td>
               <td>- 電力改善</td>
             </tr>
             <tr>
               <td>2020/10/13</td>
               <td>2.06</td>
+              <td>1.3</td>
               <td><a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20201001.avr.zip">TuKuRutch.20201001.avr.zip</a> ATmega版</td>
               <td>- クアッドクローラー歩行改善</td>
             </tr>
@@ -235,6 +234,7 @@
               <td>2020/09/13</td>
               <td>2.05<br />
               3.05</td>
+              <td>1.3</td>
               <td><a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20200913.esp.zip">TuKuRutch.20200913.esp.zip</a> ESP版<br />
               <a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20200913.espfull.zip">TuKuRutch.20200913.espfull.zip</a> ESP完全版<br />
               ATmega版無し</td>
@@ -246,6 +246,7 @@
               <td>2020/08/16</td>
               <td>2.04<br />
               3.04</td>
+              <td>&#160;</td>
               <td><a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20200816.esp.zip">TuKuRutch.20200816.esp.zip</a> ESP完全版<br />
               ATmega版無し</td>
               <td>- scratch3.0対応、M5Camera・ジョイパッド対応</td>
@@ -253,6 +254,7 @@
             <tr>
               <td>2020/06/05</td>
               <td>1.03</td>
+              <td>&#160;</td>
               <td><a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20200605.zip">TuKuRutch.20200605.zip</a> ATmega版<br />
               <a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20200605.esp.zip">TuKuRutch.20200605.esp.zip</a> ESP完全版<br />
               <a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20200605.koov.zip">TuKuRutch.20200605.koov.zip</a> Koovβ版</td>
@@ -265,6 +267,7 @@
             <tr>
               <td>2020/03/05</td>
               <td>1.02</td>
+              <td>&#160;</td>
               <td><a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20200305.zip">TuKuRutch.20200305.zip</a> ATmega版<br />
               <a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20200305e.zip">TuKuRutch.20200305e.zip</a> ESP完全版</td>
               <td>- クアッドクローラー歩行改善（等加速＋等速制御）<br />
@@ -274,6 +277,7 @@
             <tr>
               <td>2020/02/13</td>
               <td>1.01</td>
+              <td>&#160;</td>
               <td><a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.20200213.zip">TuKuRutch.20200213.zip</a></td>
               <td>- 拡張ブロック定義 jsonファイルからPC通信プログラムを自動生成、世界初！（作者調べ）<br />- クアッドクローラーやその他ロボット、arduino基板対応<br />
               - デザインを大幅変更</td>
@@ -281,13 +285,15 @@
             <tr>
               <td>2020/01/08</td>
               <td>1.0</td>
+              <td>&#160;</td>
               <td><a href="http://sohta02.sakura.ne.jp/release/TuKuRutch.RemoconRobo.20200108.zip">TuKuRutch.RemoconRobo.20200108.zip</a></td>
               <td> </td>
           </tr>
           <tr>
             <td>2019/07/15</td>
             <td>1.0</td>
-            <td><a href="release/RemoconRoboApp.zip">RemoconRoboApp.zip</a><br />
+              <td>&#160;</td>
+              <td><a href="release/RemoconRoboApp.zip">RemoconRoboApp.zip</a><br />
             <a href="release/RemoconRoboFW.20190715.zip">RemoconRoboFW.20190715.zip</a></td>
             <td>- アナログリモコン対応<br />
             - 直進補正対応<br />
@@ -296,7 +302,8 @@
           <tr>
             <td>2018/07/30</td>
             <td align="center">-</td>
-            <td>mBlock20180730.zip</td>
+              <td align="center">&#160;</td>
+              <td>mBlock20180730.zip</td>
             <td>- 初リリース</td>
           </tr>
         </tbody></table>
