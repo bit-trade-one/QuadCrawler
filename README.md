@@ -1,7 +1,7 @@
 ![logo](https://bit-trade-one.co.jp/wp/wp-content/uploads/2020/02/ADCRBT-LOGO-YOKOMAX.png)  
 ![body](docs/images/body.png)
 
-## [新しい本体ソフトをリリースしました！ 更新手順はこちら (2022/02/04)](https://bit-trade-one.github.io/QuadCrawler/familyday_app.html#updateFW)
+## [新しい本体ソフトをリリースしました！ 更新手順はこちら (2022/07/25)](https://bit-trade-one.github.io/QuadCrawler/familyday_quadcrawler.html#update)
 
 新しい本体ソフトでは [サーボ角度の微調整](CalibrationByRemote.md) が必要です。  
 
@@ -11,7 +11,7 @@
 
 ## [リモコン操作方法はこちら！](InstructionManual.md)
 
-## [PCアプリ「つくるっち」のダウンロードとマニュアルはこちら！](https://bit-trade-one.github.io/QuadCrawler/familyday_app.html)
+## [PCアプリ「つくるっち」はこちら！](https://bit-trade-one.github.io/QuadCrawler/familyday_quadcrawler.html)
 
 ## [良くある質問はこちら](FAQ.md)
 
