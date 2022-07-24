@@ -23,8 +23,16 @@
   <div id="contents">
     <div id="main">
       <h2>クアッドクローラー プログラミング</h2>
-      <p>アプリダウンロードは<a href="familyday_app.html">こちら</a>、本体ソフトの更新は<a href="familyday_app.html#updateFW">こちら</a>を参照して下さい。</p>
+      　アプリ版
       <ul>
+        <li><a href="#sample">サンプルプログラム</a></li>
+        <li><a href="#update">ロボットソフトの更新</a></li>
+        <li><a href="#programming1">アプリからロボットを操作する</a></li>
+        <li><a href="#remocon2">リモコンを押したときブザーを鳴らすプログラムを作る</a></li>
+      </ul>
+      　exe版
+      <ul>
+        <li></li>
         <li><a href="#programming1">「つくるっち」からロボットを操作する</a></li>
         <li><a href="#remocon">リモコンを押したときブザーを鳴らすプログラムを作る</a></li>
         <li><a href="#burn">自分のプログラムをロボットに書き込む</a></li>
@@ -33,17 +41,56 @@
         <li><a href="#sample">サンプルプログラム</a></li>
         <li><a href="#robot_normal">「最初のプログラム」とArduino API</a></li>
       </ul>
-
-      <h4><a name="programming1" id="programming1">「つくるっち」からロボットを操作する</a></h4>
-      <p>　　<b>「つくるっち」でロボットを操作してみます。</b></p>
+      <h3>アプリ版</h3>
+      つくるっち アプリ版はWindowsパソコン、MACパソコン、ChromeBookのChromeブラウザで動作します。
+      <h4><a name="sample" id="sample">サンプルプログラム</a></h4>
       <ul>
-        <li><img src="images/image32.png" width="184" height="25" border="0" align="top" />のように表示されているか確認し、表示されてないときは<a href="familyday_app.html#connecting">PC通信モードに設定</a>を実行して下さい。</li>
+        <li><a href="https://sohta02.sakura.ne.jp/tukurutch/#000000460">新規プログラム</a></li>
+        <li><a href="https://sohta02.sakura.ne.jp/tukurutch/#000000461">デジタルリモコン操縦</a></li>
+        <li><a href="https://sohta02.sakura.ne.jp/tukurutch/#000000462">アナログリモコン操縦</a></li>
+      </ul>
+
+      <h4><a name="update" id="update">ロボットソフトの更新</a></h4>
+      <p>　　一度だけロボットソフトを更新する必要があります。</p>
+      <ul>
+        <li>ロボットをUSBケーブルでパソコンにつなぎます。</li>
+        <li><a href="https://sohta02.sakura.ne.jp/tukurutch/#000000460">新規プログラム</a>を開き、[QuadCrarwler] - [QuadCrarwler書き込み] を押します。<br />
+        <img src="images/image271.png" width="249" height="44" border="0" /><br />
+        </li>
+        <li>下記画面が出るのでCOMxを選択して [接続]。<br />
+        <img src="images/image108.png" width="450" height="116" border="0" /></li>
+      </ul>
+
+      <h4><a name="programming1" id="programming1">アプリからロボットを操作する</a></h4>
+      <ul>
+        <li><a href="https://sohta02.sakura.ne.jp/tukurutch/#000000460">新規プログラム</a>を開き、ロボットのスイッチを入れ [QuadCrarwler] - 緑のボタンのどれかを押します。<br />
+        <img src="images/image282.png" width="249" height="276" border="0" /><br />
+        </li>
+        <li>下記画面が出るのでCOMxを選択して [接続]。ロボットが動作します。<img src="images/image30.png" width="49" height="41" border="0" align="middle" /> を押すとロボットの動きが止まります。<br />
+        <img src="images/image108.png" width="450" height="116" border="0" /></li>
+      </ul>
+
+      <h4><a name="remocon2" id="remocon2">リモコンを押したときブザーを鳴らすプログラムを作る</a></h4>
+      <ul>
+        <li>図の通りに [制御] - [ずっと] と [もし　なら]、[QuadClawler] - [beep 50] と [リモコンボタンが押された]
+        を並べます。<br />
+        <img src="images/image321.png" width="179" height="161" border="0" align="top" /> <img src="images/image331.png" width="229" height="80" border="0" align="top" />　→　<img src="images/image341.png" width="237" height="144" border="0" align="top" /></li>
+        <li>ブロックの端をクリックしてブロックのまわりが黄色い状態にします。この状態でロボットに向けリモコンのボタンを押すとブザーが鳴ります。<br />
+        <img src="images/image351.png" width="247" height="154" border="0" /></li>
+      </ul>
+
+      <h3>exe版</h3>
+      <h4><a name="install" id="install">つくるっちexe版インストール</a></h4>
+      <ul>
+        <li><a href="http://sohta02.web.fc2.com/familyday_exe.html">こちらのサイト</a>で [つくるっちexeインストール] と [ロボットのソフトを更新] して下さい。</li>
+      </ul>
+      <h4><a name="programming1" id="programming1">「つくるっち」からロボットを操作する</a></h4>
+      <ul>
         <li><img src="images/image131.png" width="81" height="27" border="0" align="top" />を押すとロボットのブザーが鳴ります。</li>
         <li><img src="images/image111.png" width="118" height="32" border="0" align="top" /> を押すとロボットが前に進みます。<img src="images/image121.png" width="55" height="30" border="0" align="top" />を押すと止まります。</li>
       </ul>
 
       <h4><a name="remocon" id="remocon">リモコンを押したときブザーを鳴らすプログラムを作る</a></h4>
-      <p><b>　　リモコンのボタンを押したときブザーを鳴らすプログラムを作ります。</b></p>
       <ol>
         <li>図の通り<img src="images/image171.png" width="114" height="19" border="0" align="middle" /> - <img src="images/image221.png" width="91" height="36" border="0" align="middle" />を置く。<br />
         <img src="images/image25.png" width="381" height="204" border="0" /><br />
@@ -141,14 +188,9 @@
     <div id="hpb-aside">
       <div class="section">
         <p><b><a href="https://github.com/bit-trade-one/QuadCrawler">クアッドクローラートップ</a></b></p>
-        <b>つくるっち</b>
         <ul>
-          <li><a href="familyday_app.html">ダウンロード&amp;説明</a></li>
-          <li><a href="familyday_quadcrawler.html">クアッドクローラー<br />
-          プログラミング</a></li>
-        </ul>
-        <br />
-        <ul>
+          <li><a href="familyday_quadcrawler.html">プログラミング</a>
+        </li>
           <li><a href="http://sohta02.web.fc2.com/familyday.html">そーたメイサイト</a></li>
         </ul>
       </div>
