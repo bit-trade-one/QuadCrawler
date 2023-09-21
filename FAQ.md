@@ -66,3 +66,20 @@ A. 可能です。
 
 A. 公式オンラインショップBTOSで取り扱っております  
 [購入先リンク](https://btoshop.jp/products/adcr?__hstc=19497895.809c283c937534322db928d3b4b2a0a3.1656670218873.1664866640768.1664874223408.271&__hssc=19497895.4.1664874223408&__hsfp=617408321)
+
+----
+
+#### Q.WINDOWSに接続しても認識されない  
+A. ArduinoNanoのドライバのバージョンダウンで治る可能性があります。  
+リンク先のPDFを参考に行ってください。  
+[ArdunoNANOドライババージョンダウン方法.pdf](https://github.com/bit-trade-one/QuadCrawler/blob/master/Documents/ArdunoNANO%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%80%E3%82%A6%E3%83%B3%E6%96%B9%E6%B3%95.pdf)  
+
+----
+
+#### Q.ArduinoNanoのドライバのバージョンを下げたい。  
+A. 手順を公開しています。  
+リンク先のPDFを参考に行ってください。  
+[ArdunoNANOドライババージョンダウン方法.pdf](https://github.com/bit-trade-one/QuadCrawler/blob/master/Documents/ArdunoNANO%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%80%E3%82%A6%E3%83%B3%E6%96%B9%E6%B3%95.pdf)    
+
+----
+
